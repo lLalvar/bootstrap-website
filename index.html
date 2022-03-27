@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap Website</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-md navbar-dark style">
+        <div class="container-xl">
+          <a class="navbar-brand fs-2" href="#">Lalvar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+            <ul class="navbar-nav text-center ms-auto navbar-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Drop Down
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarScrollingDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Drop Down Item 1</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down Item 2</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down Item 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <button
+                class="btn btn-light ms-md-2 mb-2 mb-md-0 align-self-center"
+              >
+                Get Started
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Main -->
+    <main class="bg-primary text-light">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row gap-5" data-aos="fade-up">
+          <div
+            class="main__left d-flex flex-column justify-content-center align-items-start"
+          >
+            <h1 class="fs-1 mb-4">Lorem ipsum dolor sit amet</h1>
+            <p class="fs-6">
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo illo quia quo tenetur assumenda consequatur, odit eaque nesciunt perferendis ducimus vitae voluptates, repellat impedit molestias neque optio ut suscipit? Dolor.
+            </p>
+            <button class="btn btn-light">Get Started</button>
+          </div>
+          <div class="align-self-center"  data-aos="zoom-in">
+            <img src="./img/main.svg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- COMPANIES -->
+    <section class="bg-light">
+      <div class="container" data-aos="zoom-in">
+        <div class="row row-cols-2 row-cols-xs-2 row-cols-md-3 row-cols-lg-6">
+          <div
+            class="company col py-5 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-brands fa-artstation"></i>
+            <span class="ps-3">artstation</span>
+          </div>
+          <div
+            class="company col py-5 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-brands fa-audible"></i>
+            <span class="ps-3">audible</span>
+          </div>
+          <div
+            class="company col py-5 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-brands fa-atlassian"></i>
+            <span class="ps-3">atlassian</span>
+          </div>
+          <div
+            class="company col py-5 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-brands fa-battle-net"></i>
+            <span class="ps-3">battle-net</span>
+          </div>
+          <div
+            class="company col py-5 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-brands fa-discord"></i>
+            <span class="ps-3">discord</span>
+          </div>
+          <div
+            class="company col py-5 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-brands fa-drupal"></i>
+            <span class="ps-3">drupal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="py-5" data-aos="fade-up">
+      <h1 class="fs-1 text-center mb-3 fw-bold">ABOUT US</h1>
+      <div class="underline mb-4"></div>
+      <div class="container">
+        <div class="row gap-4">
+          <div class="col-md">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dicta omnis deserunt earum laudantium excepturi quo est eligendi
+              odit aspernatur animi, nesciunt voluptates quisquam eius
+              accusantium esse dolore repudiandae fugiat!
+            </p>
+          </div>
+          <div class="col-md">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit
+              quidem praesentium temporibus quis sapiente a saepe sint quae
+              sequi.
+            </p>
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row gap-4" data-aos="fade-up">
+          <div class="col-md">
+            <h2 class="fs-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit Deserunt
+            </h2>
+            <p class="fs-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              explicabo vitae hic recusandae ipsum a molestiae suscipit nulla,
+              fuga culpa.
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                   <span class="fw-bold text-primary me-2">01</span>Lorem ipsum dolor sit, amet consectetur adipisicing
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. <code>Neque architecto.</code> earum quibusdam quasi, praesentium odio mollitia ipsa sit dignissimos laboriosam. mollitia ipsa sit dignissimos </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                   <span class="fw-bold text-primary me-2">02</span>Lorem ipsum dolor sit, amet adipisicing
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ab <code>Vero aliquid.</code> accusantium delectus quia itaque, excepturi laudantium consequuntur modi non autem laboriosam nihil placeat reprehenderit eum quae ducimus? Perferendis.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <span class="fw-bold text-primary me-2">03</span>Lorem ipsum dolor  amet consectetur adipisicing
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, repellendus dolore quasi dignissimos assumenda <code>Enim nihil,</code> aspernatur eveniet iure eius neque placeat perspiciatis obcaecati a reiciendis quaerat dolores excepturi non rerum. Excepturi, nihil rerum fuga obcaecati quibusdam id consequatur atque!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-md align-self-center" data-aos="zoom-in">
+          <img src="./img/accordion.svg" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+    
+    <!-- ANALYTICS -->
+    <section class="container py-5">
+      <div class="row align-items-center gap-5">
+        <div class="col" data-aos="fade-up-right">
+          <img src="./img/analytics.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md" data-aos="fade-up-left">
+          <h2 class="fs-2 fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ea illum autem voluptate, nostrum labore!</p>
+          <div>
+            <div>
+              <div class="d-flex justify-content-between"><p class="mb-1">HTML</p><p class="mb-1">100%</p></div>
+              <div class="progress mb-4">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex justify-content-between"><p class="mb-1">CSS</p><p class="mb-1">50%</p></div>
+              <div class="progress mb-4">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex justify-content-between"><p class="mb-1">JAVASCRIPT</p><p class="mb-1">40%</p></div>
+              <div class="progress mb-4">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+         
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="bg-light">
+        <div class="container py-5">
+          <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">SERVICES</h1>
+          <div class="underline mb-4" data-aos="fade-up"></div>
+          <p class="fs-6 text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minus aliquam, nihil voluptas ad ex quas fuga magni excepturi eveniet recusandae repudiandae fugit porro? Repudiandae.</p>
+          <div class="container">
+            <div class="services__cards">
+              <div class="services__card" data-aos="zoom-in">
+                  <div class="services__card-wrapper shadow">
+                    <i class="fa-brands fa-docker mb-3" style="color: var(--bs-primary); font-size: 2rem"></i>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="services__card" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="services__card-wrapper shadow">
+                  <i class="fa-solid fa-dungeon mb-3"style="color: var(--bs-primary); font-size: 2rem"></i>
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="services__card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="services__card-wrapper shadow">
+                  <i class="fa-solid fa-ethernet mb-3" style="color: var(--bs-primary); font-size: 2rem"></i>
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="services__card" data-aos="zoom-in" data-aos-delay="600">
+                  <div class="services__card-wrapper shadow">
+                  <i class="fa-solid fa-fire-flame-curved mb-3" style="color: var(--bs-primary); font-size: 2rem"></i>
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- PARALLAX -->
+    <section class="parallax"><div class="parallax-img"></div>
+       <div class="container parallax__items flex-column d-flex flex-sm-row justify-content-center align-items-center gap-4">
+         <div class="text-sm-start text-center" data-aos="zoom-in">
+           <h3 class="fs-3 text-white">PARALLAX</h3>
+           <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum deserunt quaerat veritatis ea ipsa! Laborum quidem doloribus at consectetur voluptatem?</p>
+         </div>
+         <button class="btn btn-primary" data-aos="zoom-in">Button</button>
+       </div>
+      </section>
+
+    <!-- PORTFOLIO -->
+    <section class="container py-5">
+      <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">PORTFOLIO</h1>
+      <div class="underline mb-4" data-aos="fade-up"></div>
+      <p class="fs-6 text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos! In veniam alias voluptatum nam, sit magnam quis nihil, repellendus nobis, ea reprehenderit perferendis enim ex explicabo ducimus expedita.</p>
+      <div class="d-flex align-items-center justify-content-center gap-4 mb-5" data-aos="fade-up">
+        <button class="btn btn-primary">All</button> 
+        <button class="btn btn-secondary">App</button> 
+        <button class="btn btn-secondary">Card</button> 
+        <button class="btn btn-secondary">Web</button> 
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio__item-wrapper left1" data-aos="fade-up">
+          <div class="portfolio__item-1 portfolio__item"></div>
+        </div>
+        <div class="portfolio__item-wrapper center1" data-aos="fade-up">
+          <div class="portfolio__item-2 portfolio__item"></div>
+        </div>
+        <div class="portfolio__item-wrapper right1" data-aos="fade-up">
+          <div class="portfolio__item-3 portfolio__item"></div>
+        </div>
+        <div class="portfolio__item-wrapper left2" data-aos="fade-up">
+          <div class="portfolio__item-4 portfolio__item"></div>
+        </div>
+        <div class="portfolio__item-wrapper center2" data-aos="fade-up">
+          <div class="portfolio__item-5 portfolio__item"></div>
+        </div>
+        <div class="portfolio__item-wrapper right2" data-aos="fade-up">
+          <div class="portfolio__item-6 portfolio__item"></div>
+        </div>
+        <div class="portfolio__item-wrapper center3" data-aos="fade-up">
+          <div class="portfolio__item-7 portfolio__item"></div>
+        </div>
+        <div class="portfolio__item-wrapper right3" data-aos="fade-up">
+          <div class="portfolio__item-8 portfolio__item"></div>
+        </div>
+        <div class="portfolio__item-wrapper right4" data-aos="fade-up">
+          <div class="portfolio__item-9 portfolio__item"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">TEAM</h1>
+        <div class="underline mb-4" data-aos="fade-up"></div>
+        <p class="fs-6 text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos! In veniam alias voluptatum nam, sit magnam quis nihil, repellendus nobis, ea reprehenderit perferendis enim ex explicabo ducimus expedita.</p>
+        <div>
+          <div class="team__cards container">
+            <div class="team__card" data-aos="zoom-in">
+                  <div class="team__card-wrapper shadow bg-white d-flex justify-content-center align-items-center rounded">
+                    <div class="team__card-img ">
+                      <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="" class="rounded-circle">
+                    </div>
+                    <div class="team__card-info">
+                      <h5 class="fs-4">John Doe</h5>
+                      <p class="fs-6">CEO</p>
+                      <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing Voluptatibus, sint eos</p>
+                      <div class="d-flex gap-2">
+                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light p-2 rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="team__card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="team__card-wrapper bg-white d-flex justify-content-center align-items-center rounded shadow">
+                    <div class="team__card-img ">
+                      <img src="https://randomuser.me/api/portraits/women/0.jpg" alt="" class="rounded-circle">
+                    </div>
+                    <div class="team__card-info">
+                      <h5 class="fs-4">Jane Smith</h5>
+                      <p class="fs-6">CTO</p>
+                      <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Volupt sint eos</p>
+                      <div class="d-flex gap-2">
+                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light p-2 rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="team__card" data-aos="zoom-in">
+                  <div class="team__card-wrapper bg-white d-flex justify-content-center align-items-center rounded shadow">
+                    <div class="team__card-img ">
+                      <img src="https://randomuser.me/api/portraits/men/79.jpg" alt="" class="rounded-circle">
+                    </div>
+                    <div class="team__card-info">
+                      <h5 class="fs-4">Joe Bloggs</h5>
+                      <p class="fs-6">Product Manager</p>
+                      <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos</p>
+                      <div class="d-flex gap-2">
+                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light p-2 rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="team__card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="team__card-wrapper bg-white d-flex justify-content-center align-items-center rounded shadow">
+                    <div class="team__card-img ">
+                      <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="" class="rounded-circle">
+                    </div>
+                    <div class="team__card-info">
+                      <h5 class="fs-4">Amanda Jepson</h5>
+                      <p class="fs-6">Accountant</p>
+                      <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos</p>
+                      <div class="d-flex gap-2">
+                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light p-2 rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+          </div>
+       </div>
+    </section>
+    
+    <!-- PRICING -->
+    <section class="container py-5">
+      <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">PRICING</h1>
+        <div class="underline mb-4" data-aos="fade-up"></div>
+        <p class="fs-6 text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos! In veniam alias voluptatum nam, sit magnam quis nihil, repellendus nobis, ea reprehenderit perferendis enim ex explicabo ducimus expedita.</p>
+        <div class="pricing__cards pt-5">
+          <div class="pricing__card p-5 shadow text-center border" data-aos="zoom-in">
+            <h5>Free Plan</h5>
+            <h4 class="fs-1">$0</h4>
+            <h6 class="text-primary">per month</h6>
+            <div class="py-3">
+              <p>Lorem ipsum dolor sit</p>
+              <p>Lorem ipsum dolor </p>
+              <p>Lorem ipsum dolor sit asor</p>
+              <p>Lorem ipsum dolor </p>
+              <p>Lorem ipsum dolor sit at</p>
+            </div>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+          <div class="pricing__card p-5 shadow text-center border" data-aos="zoom-in" data-aos-delay="200">
+            <h5>Free Plan</h5>
+            <h4 class="fs-1">$19</h4>
+            <h6 class="text-primary">per month</h6>
+            <div class="py-3">
+              <p>Lorem ipsum dolor sit</p>
+              <p>Lorem ipsum dolor </p>
+              <p>Lorem ipsum dolor sit asor</p>
+              <p>Lorem ipsum dolor </p>
+              <p>Lorem ipsum dolor sit at</p>
+            </div>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+          <div class="pricing__card p-5 shadow text-center border" data-aos="zoom-in" data-aos-delay="400">
+            <h5>Free Plan</h5>
+            <h4 class="fs-1">$29</h4>
+            <h6 class="text-primary">per month</h6>
+            <div class="py-3">
+              <p>Lorem ipsum dolor sit</p>
+              <p>Lorem ipsum dolor </p>
+              <p>Lorem ipsum dolor sit asor</p>
+              <p>Lorem ipsum dolor </p>
+              <p>Lorem ipsum dolor sit at</p>
+            </div>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">FAQ</h1>
+        <div class="underline mb-4" data-aos="fade-up"></div>
+        <p class="fs-6 text-center pb-5" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ratione obcaecati sapiente quisquam ut deleniti rem autem libero nesciunt facere repellendus asperiores assumenda voluptatum id voluptates iste, dicta earum optio consectetur minima molestiae et provident</p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item" data-aos="fade-up">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                   <span class="fw-bold text-primary me-2"><i class="fa-solid fa-circle-question"></i></span>Lorem ipsum dolor sit, amet consectetur adipisicing
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. <code>Neque architecto.</code> earum quibusdam quasi, praesentium odio mollitia ipsa sit dignissimos laboriosam. mollitia ipsa sit dignissimos </div>
+                </div>
+              </div>
+              <div class="accordion-item" data-aos="fade-up">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                   <span class="fw-bold text-primary me-2"><i class="fa-solid fa-circle-question"></i></span>Lorem ipsum dolor sit, amet adipisicing
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ab <code>Vero aliquid.</code> accusantium delectus quia itaque, excepturi laudantium consequuntur modi non autem laboriosam nihil placeat reprehenderit eum quae ducimus? Perferendis.</div>
+                </div>
+              </div>
+              <div class="accordion-item" data-aos="fade-up">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <span class="fw-bold text-primary me-2"><i class="fa-solid fa-circle-question"></i></span>Lorem ipsum dolor  amet consectetur adipisicing
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, repellendus dolore quasi dignissimos assumenda <code>Enim nihil,</code> aspernatur eveniet iure eius neque placeat perspiciatis obcaecati a reiciendis quaerat dolores excepturi non rerum. Excepturi, nihil rerum fuga obcaecati quibusdam id consequatur atque!</div>
+                </div>
+              </div>
+               <div class="accordion-item" data-aos="fade-up">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsFour" aria-expanded="false" aria-controls="flush-collapsFour">
+                   <span class="fw-bold text-primary me-2"><i class="fa-solid fa-circle-question"></i></span>Lorem ipsum dolor sit, amet adipisicing
+                  </button>
+                </h2>
+                <div id="flush-collapsFour" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ab <code>Vero aliquid.</code> accusantium delectus quia itaque, excepturi laudantium consequuntur modi non autem laboriosam nihil placeat reprehenderit eum quae ducimus? Perferendis.</div>
+                </div>
+              </div>
+              <div class="accordion-item" data-aos="fade-up">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsFive" aria-expanded="false" aria-controls="flush-collapsFive">
+                    <span class="fw-bold text-primary me-2"><i class="fa-solid fa-circle-question"></i></span>Lorem ipsum dolor  amet consectetur adipisicing
+                  </button>
+                </h2>
+                <div id="flush-collapsFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, repellendus dolore quasi dignissimos assumenda <code>Enim nihil,</code> aspernatur eveniet iure eius neque placeat perspiciatis obcaecati a reiciendis quaerat dolores excepturi non rerum. Excepturi, nihil rerum fuga obcaecati quibusdam id consequatur atque!</div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container py-5">
+      <h1 class="fs-1 text-center mb-3 fw-bold"  data-aos="fade-up">CONTACT</h1>
+        <div class="underline mb-4" data-aos="fade-up"></div>
+        <p class="fs-6 text-center pb-5" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores natus laborum voluptates illum, molestias provident architecto aliquid aspernatur, temporibus blanditiis saepe. Soluta nisi illo expedita earum et rem, hic sapiente!</p>
+        <div class="contact__items">
+          <div class="contact__item shadow" data-aos="zoom-in">
+            <div>
+              <div class="contact__item-wrapper d-flex gap-4">
+                <div class="contact__icon fs-2 bg-light"><i class="fa-solid fa-location-dot rounded-circle"></i></div>
+                <div>
+                  <div><h3>Location</h3>
+                  <p>Yerevan, Armenia</p></div>
+                </div>
+              </div>
+              <div class="contact__item-wrapper d-flex gap-4">
+                <div class="contact__icon fs-3 bg-light"><i class="fa-solid fa-envelope rounded-circle"></i></div>
+                <div>
+                  <div><h3>Email</h3>
+                  <p>info@example.com</p></div>
+                </div>
+              </div>
+              <div class="contact__item-wrapper d-flex gap-4">
+                <div class="contact__icon fs-3 bg-light"><i class="fa-solid fa-mobile rounded-circle"></i></div>
+                <div>
+                  <div><h3>Call</h3>
+                  <p>+374 94 123 123s</p></div>
+                </div>
+              </div>
+            </div>
+            <div class='contact__map'>
+              <a
+                href='https://www.google.com/maps/place/Yerevan,+Armenia/@40.1733279,44.5233817,10.75z/data=!4m5!3m4!1s0x406aa2dab8fc8b5b:0x3d1479ae87da526a!8m2!3d40.1872023!4d44.515209'
+                target='_blank'
+              >
+                <img src='./img/map.jpg' alt='Location on Map' />
+              </a>
+            </div>
+          </div>
+       
+          <form class="contact__item shadow d-flex flex-column" data-aos="zoom-in" data-aos-delay="300">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+             <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="">
+              <label for="floatingTextarea" class="form-label">Message</label>
+              <textarea class="contact__textarea form-control mb-3" placeholder="Leave a comment here" id="floatingTextarea" rows="3"></textarea>
+            </div>
+            <button type="button" class="mt-auto btn btn-primary">Submit</button>
+          </form>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="py-5 bg-light">
+      <div class="container newsletter text-center">
+        <h3  data-aos="fade-up">Join Our Newsletter</h3>
+        <p class="mb-4" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit quisquam</p>
+        <div class="input-group mb-3" data-aos="fade-up">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container py-5">
+      <div class="footer__item d-flex flex-column">
+        <h3 class="mb-3">Lalvar</h3>
+        <small>Sayat-Nova Ave</small>
+        <small>Yerevan</small>
+        <small class="pb-3">Armenia</small>
+        <small><b>Phone:</b> +374 94 123 123s</small>
+        <small><b>Email:</b> info@example.com</small>
+      </div>
+      <div class="footer__item d-flex flex-column">
+        <h5 class="mb-3">Useful Links</h5>
+        <p>Home</p>
+        <p>About us</p>
+        <p>Services</p>
+        <p>Terms of sercive</p>
+        <p>Privacy policy</p>
+      </div>
+      <div class="footer__item d-flex flex-column">
+        <h5 class="mb-3">Useful Links</h5>
+        <p>Web Design</p>
+        <p>Web Development</p>
+        <p>Product Managment</p>
+        <p>Maketing</p>
+        <p>Graphic Design</p>
+      </div>
+      <div class="footer__item d-flex flex-column">
+        <h5 class="mb-3">Useful Links</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing reiciend velit</p>
+        <div class="footer__icons d-flex gap-2">
+          <div class="footer__icon fs-6 bg-light"><i class="fa-brands fa-facebook rounded-circle"></i></div>
+          <div class="footer__icon fs-6 bg-light"><i class="fa-brands fa-twitter rounded-circle"></i></div>
+          <div class="footer__icon fs-6 bg-light"><i class="fa-brands fa-instagram rounded-circle"></i></div>
+          <div class="footer__icon fs-6 bg-light"><i class="fa-brands fa-linkedin rounded-circle"></i></div>
+          <div class="footer__icon fs-6 bg-light"><i class="fa-brands fa-github rounded-circle"></i></div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <!-- Scripts -->
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Animate On Scroll (AOS) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
