@@ -141,7 +141,7 @@ main img {
 }
 
 #analytics {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /*
