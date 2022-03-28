@@ -23,9 +23,9 @@
   </head>
   <body>
     <!-- Navbar -->
-      <nav class="navbar sticky-top navbar-expand-md navbar-dark style">
+      <nav class="navbar sticky-top navbar-expand-md navbar-dark style py-3">
         <div class="container-xl">
-          <a class="navbar-brand fs-2" href="#">Lalvar</a>
+          <div id="logo" class="navbar-brand">Lalvar</div>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,39 +40,25 @@
           <div class="collapse navbar-collapse ml-auto" id="navbarNav">
             <ul class="navbar-nav text-center ms-auto navbar-dark">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <div class="nav-link text-light" id="home-btn">Home</div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <div class="nav-link text-light" id="about-us-btn">About</div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <div class="nav-link text-light" id="services-btn">Services</div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarScrollingDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Drop Down
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarScrollingDropdown"
-                >
-                  <li><a class="dropdown-item" href="#">Drop Down Item 1</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down Item 2</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down Item 3</a></li>
-                </ul>
+                <div class="nav-link text-light" id="portfolio-btn">Portfolio</div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <div class="nav-link text-light" id="team-btn">Team</div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link text-light" id="pricing-btn">Pricing</div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link text-light" id="contact-btn">Contact</div>
               </li>
               <button
                 class="btn btn-light ms-md-2 mb-2 mb-md-0 align-self-center"
@@ -83,6 +69,15 @@
           </div>
         </div>
       </nav>
+      <div class="scroll-top-btn" data-aos="zoom-in" data-aos-once="false" data-aos-offset="500" data-aos-duration="500"
+       >
+        <div>
+          <div class="scroll-top-btn-wrapper">
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-up"></i>
+          </div>
+        </div>
+      </div>
 
     <!-- Main -->
     <main class="bg-primary text-light">
@@ -149,7 +144,7 @@
     </section>
 
     <!-- ABOUT US -->
-    <section class="py-5" data-aos="fade-up">
+    <section id="about-us" class="py-5 scroll-offset" data-aos="fade-up">
       <h1 class="fs-1 text-center mb-3 fw-bold">ABOUT US</h1>
       <div class="underline mb-4"></div>
       <div class="container">
@@ -227,7 +222,7 @@
     </section>
     
     <!-- ANALYTICS -->
-    <section class="container py-5">
+    <section id="analytics" class="container py-5">
       <div class="row align-items-center gap-5">
         <div class="col" data-aos="fade-up-right">
           <img src="./img/analytics.svg" alt="" class="img-fluid">
@@ -262,7 +257,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="bg-light">
+    <section id="services" class="bg-light scroll-offset">
         <div class="container py-5">
           <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">SERVICES</h1>
           <div class="underline mb-4" data-aos="fade-up"></div>
@@ -314,7 +309,7 @@
       </section>
 
     <!-- PORTFOLIO -->
-    <section class="container py-5">
+    <section id="portfolio" class="container py-5 scroll-offset">
       <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">PORTFOLIO</h1>
       <div class="underline mb-4" data-aos="fade-up"></div>
       <p class="fs-6 text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos! In veniam alias voluptatum nam, sit magnam quis nihil, repellendus nobis, ea reprehenderit perferendis enim ex explicabo ducimus expedita.</p>
@@ -356,13 +351,13 @@
     </section>
 
     <!-- TEAM -->
-    <section class="bg-light py-5">
+    <section id="team" class="bg-light py-5  scroll-offset">
       <div class="container">
         <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">TEAM</h1>
         <div class="underline mb-4" data-aos="fade-up"></div>
         <p class="fs-6 text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos! In veniam alias voluptatum nam, sit magnam quis nihil, repellendus nobis, ea reprehenderit perferendis enim ex explicabo ducimus expedita.</p>
         <div>
-          <div class="team__cards container">
+          <div class="team__cards">
             <div class="team__card" data-aos="zoom-in">
                   <div class="team__card-wrapper shadow bg-white d-flex justify-content-center align-items-center rounded">
                     <div class="team__card-img ">
@@ -373,10 +368,10 @@
                       <p class="fs-6">CEO</p>
                       <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing Voluptatibus, sint eos</p>
                       <div class="d-flex gap-2">
-                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fs-4 fa-brands fa-facebook bg-light rounded-circle"></i>
+                        <i class="team__icon fs-4 fa-brands fa-instagram bg-light rounded-circle"></i>
+                        <i class="team__icon fs-4 fa-brands fa-twitter bg-light rounded-circle"></i>
+                        <i class="team__icon fs-4 fa-brands fa-linkedin bg-light rounded-circle"></i>
                       </div>
                     </div>
                   </div>
@@ -391,10 +386,10 @@
                       <p class="fs-6">CTO</p>
                       <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Volupt sint eos</p>
                       <div class="d-flex gap-2">
-                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light rounded-circle"></i>
                       </div>
                     </div>
                   </div>
@@ -409,10 +404,10 @@
                       <p class="fs-6">Product Manager</p>
                       <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos</p>
                       <div class="d-flex gap-2">
-                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light rounded-circle"></i>
                       </div>
                     </div>
                   </div>
@@ -427,10 +422,10 @@
                       <p class="fs-6">Accountant</p>
                       <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos</p>
                       <div class="d-flex gap-2">
-                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light p-2 rounded-circle"></i>
-                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light p-2 rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-facebook fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-instagram fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-twitter fs-4 bg-light rounded-circle"></i>
+                        <i class="team__icon fa-brands fa-linkedin fs-4 bg-light rounded-circle"></i>
                       </div>
                     </div>
                   </div>
@@ -441,7 +436,7 @@
     </section>
     
     <!-- PRICING -->
-    <section class="container py-5">
+    <section id="pricing" class="container py-5 scroll-offset">
       <h1 class="fs-1 text-center mb-3 fw-bold" data-aos="fade-up">PRICING</h1>
         <div class="underline mb-4" data-aos="fade-up"></div>
         <p class="fs-6 text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint eos! In veniam alias voluptatum nam, sit magnam quis nihil, repellendus nobis, ea reprehenderit perferendis enim ex explicabo ducimus expedita.</p>
@@ -550,7 +545,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="container py-5">
+    <section id="contact" class="container py-5 scroll-offset">
       <h1 class="fs-1 text-center mb-3 fw-bold"  data-aos="fade-up">CONTACT</h1>
         <div class="underline mb-4" data-aos="fade-up"></div>
         <p class="fs-6 text-center pb-5" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores natus laborum voluptates illum, molestias provident architecto aliquid aspernatur, temporibus blanditiis saepe. Soluta nisi illo expedita earum et rem, hic sapiente!</p>
@@ -665,6 +660,9 @@
 
     
     <!-- Scripts -->
+
+    <!-- My Scripts -->
+    <script src="./app.js"></script>
 
     <!-- Bootstrap -->
     <script
